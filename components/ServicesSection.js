@@ -13,7 +13,7 @@ const ServiceCard = ({ number, title, description, delay }) => {
       initial={{ opacity: 0, y: 50 }}
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
       transition={{ duration: 0.8, delay: delay, ease: "easeOut" }}
-      className="w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1rem)] border-gray-800 mt-7 flex-col px-4 md:px-6 py-5 rounded-lg border-2"
+      className="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.33%-1rem)] border-gray-800 mt-7 flex-col px-4 md:px-6 py-5 rounded-lg border-2 h-auto lg:h-[22vw]"
     >
       <h1 className="text-3xl md:text-4xl">{number}</h1>
       <h1 className="text-2xl md:text-3xl mt-2">{title}</h1>
@@ -22,6 +22,7 @@ const ServiceCard = ({ number, title, description, delay }) => {
   );
 };
 
+// Services Section Component
 const ServicesSection = () => {
   const headerRef = useRef(null);
   const isHeaderInView = useInView(headerRef, { once: true, margin: "-100px" });
@@ -38,14 +39,14 @@ const ServicesSection = () => {
         >
           <AnimatedGradientText 
             text="Providing is our duty, services are our job" 
-            className="font-medium text-4xl md:text-5xl lg:text-6xl max-w-4xl mx-auto lg:mx-0 pt-8 lg:pt-24"
+            className="font-medium text-4xl md:text-5xl lg:text-6xl max-w-4xl lg:w-[35vw] mx-auto lg:mx-0 pt-8 lg:pt-24"
           />
           <p className="text-lg md:text-xl text-gray-500 mt-6">
             Why is it that we are <strong>special</strong>, why should <strong>you</strong> choose us?
           </p>
         </motion.div>
 
-        <div className="flex flex-wrap gap-4 md:gap-8 justify-center lg:justify-between mt-8">
+        <div className="flex flex-wrap justify-start gap-4 lg:gap-8 mt-8">
           <ServiceCard
             number="1."
             title="Fast connections."
@@ -62,6 +63,12 @@ const ServicesSection = () => {
             number="3."
             title="New features all across."
             description="We at blynkerr, don't just believe in developing, we believe in refining. All out features are tested thoroughly and are always approved by the board before version publication."
+            delay={0.6}
+          />
+          <ServiceCard
+            number="4."
+            title="Functionality as a priority."
+            description="As a founder of this project, I believe in functionality. How well do different components co-operate and work with each other to create a seameless experience for you."
             delay={0.6}
           />
         </div>

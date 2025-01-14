@@ -176,7 +176,7 @@ export default function Home() {
             <AnimatedGradientText text="No Dev Issues." />
             <AnimatedGradientText text={`Pilot Version 1.0(Standard)`} />
             <h1 className="text-gray-500 underline">
-              <a href="/easter">
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
                 <TypeAnimation
                   sequence={[
                     "Hmm, you found",

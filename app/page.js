@@ -44,7 +44,7 @@ export default function Home() {
   useEffect(() => {
     if (!isLoading) {
       const lenis = new Lenis({
-        duration: 0.3,
+        duration: 0.1,
         easing: (t) => t,
         smoothWheel: true,
         smoothTouch: true,
@@ -115,7 +115,7 @@ export default function Home() {
         <section id="landing" className="animated-gradient bg-gradient-to-br from-black via-gray-800 to-gray-900 text-white min-h-screen relative">
           <GradientSpotlight />
           <RainEffect />
-          <div className="pt-[10vw] px-4 md:px-0 flex font-medium mb-20 flex-col w-full md:w-[80vw] lg:w-[60vw] mx-auto md:ml-[10vw] lg:ml-[20vw] text-center">
+          <div className="pt-[10vw] px-4 md:px-0 flex font-medium mb-20 flex-col w-full md:w-[80vw] lg:w-[60vw] mx-auto md:ml-[10vw] lg:ml-[20vw] sm:pt-5 md:pt-5 text-center">
             <h1 className="text-3xl md:text-4xl lg:text-6xl pb-6">
               Creating world-class connections that really help people inspire
             </h1>

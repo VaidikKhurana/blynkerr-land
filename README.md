@@ -1,5 +1,5 @@
 # Blynkerr Landing Page
-
+![blynkerr landing photo](readmeassets/image.png)
 Welcome to the repository for the **Blynkerr Landing Page**! This page serves as the gateway to Blynkerr’s offerings, providing a sleek, responsive, and user-friendly interface to introduce users to the platform.
 
 ## Features

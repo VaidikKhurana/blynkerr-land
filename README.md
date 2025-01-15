@@ -12,9 +12,8 @@ Welcome to the repository for the **Blynkerr Landing Page**! This page serves as
 ## Tech Stack
 
 - **Frontend**: HTML5, TailwindCSS, JavaScript, Next.JS
-- **Framework**: Bootstrap 5 (or replace with the framework you're using)
-- **Assets**: Images, fonts, and icons from trusted sources
-
+- **Framework**: Bootstrap 5, next.js
+- **Assets**: Some assets from fonts.google.com and google.com/assets
 
 For questions or support, feel free to reach out:
 
